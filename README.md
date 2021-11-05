@@ -1,4 +1,6 @@
-# Curso IOT 
+# Curso Internet de las cosas con Arduino ([221408GE042](https://www.juntadeandalucia.es/educacion/secretariavirtual/consultaCEP/actividad/221408GE042/))
+
+![](./images/iot.png)
 
 ## CEP de Córdoba
 
@@ -6,104 +8,56 @@
 
 ![Licencia](./images/LicenciaCC_peque.png)
 
-by @javacasm
+## by @javacasm
 
 
-### Arduino vs Wemos D1 R32
+## Descripción
 
-![](./images/Correspondencia-Arduino-WemosD1R32.png)
+La idea de que sean las cosas, en lugar de las personas, las que se conectan a internet, compartan información y nos hagan la vida más fácil cada vez es percibida como más real y menos futurista, de hecho, es algo que ya ocurre continuamente a nuestro alrededor. Esta actividad profundizará sobre esta nueva forma de aprovechamiento de la red de redes y enseñará a los participantes cómo, con Arduino y otros dispositivos compatibles, podemos programar sistemas y sensores que nos resuelvan tareas de modo automático.
 
-![](./images/Pinout-Arduino-WemosD1R32.png)
+Internet de las cosas (en inglés, Internet of things, abreviado IoT) es un concepto que se refiere a la interconexión digital de objetos cotidianos con internet. Se trata de facilitar la conexión de todos los dispositivos para disponer online de la información que estos generan y a su vez poder controlarlos remotamente.
 
-Cortesía de [Leopoldo Armesto Ángel](https://www.slideshare.net/LeopoldoArmestongel)
+Desde hace mucho tiempo se tiene esta idea de la conexión y control de todos los dispositivos, pero sólo desde hace poco que se dispone de las tecnologías que permiten esta hiper-conexión.
 
+Algunas de estas Plataformas, además de permitir una gran sencillez en su uso y programación, tienen un coste muy reducido, lo que las hace adecuadas para experimentar en diferentes entornos
 
+## Requisitos
 
-## Hardware
+Para el aprovechamiento del cuso se requiere que los participantes tenga los siguientes conocimientos mínimos:
 
-![](./images/wemos-d1-esp32-r32-wroom-32-wifi-y-bluetooth.jpg)
+* Programación con Arduino: C++ (Nivel básico)
+* Uso del entorno de programación de Arduino
+* Montaje de proyectos electrónicos sencillos
+* Conocimientos básicos de electrónica
+* En definitiva: haber realizado con éxito algún proyecto con Arduino
 
-[Wemos D1 ESP32 R32 wroom](https://solectroshop.com/es/modulos-wifi/1755-wemos-d1-esp32-r32-wroom-32-wifi-y-bluetooth.html)
+Es muy recomendable que tengáis  vuestro propio ordenador portátil con la última versión de Arduino IDE 1.8.16, así como vuestra caja de arduino y sensores (si disponéis de la dotada en la actividad Arduino Tech Project, con esa tenemos todo).
 
+## Objetivos
 
-* Alimentación: 5-12VDC
-* WiFi 802.11 b/g/n/e/i (802.11n hasta 150 Mbps)
-* Bluetooth v4.2 BR/EDR y BLE.
-* Compatible con shields de Arduino Uno.
-* 6 Entrada analógica.
-* 20 Entradas/Salidas digitales (3.3V) (con funciones PWM, interrupción).
-* Comunicación UART, SPI, I2C.
-* Tamaño: 68Ã--53 mm
-* Conexión micro USB.
-* 4Mb Flash Memoria 520Kb
-* Reloj: 240Mhz (un núcleo dedicado al procesaro WiFi)
-* Temperatura: -40C+85C
-* Corriente: 250mA (max)
-* Corriente en modo ahorro: 0.15mA
-* Corriente de funcionamiento: 20mA (sin WiFi) 
+* Plantear actividades interdisciplinares a través de la electrónica.
+* Realizar actividades que permitan un proceso de enseñanza-aprendizaje competencial y transversal.
+* Fomentar el uso de una metodología activa y creativa usando la electrónica como herramienta interdisciplinar.
+* Entender el concepto de IOT.
+* Programar dispositivos IOT compatibles con Arduino, como el ESP32.
+* Conocer algunas plataformas de publicación de datos en la nube.
+* Realizar proyectos sencillos donde se utilicen características de IOT.
 
+## Contenidos
 
-![](./images/pinOut-R32-compressor-600x373.png)
+* ¿Qué es IOT?: Usos y problemas que plantea. Ejemplos.
+* Características de los equipos IOT
+* Cómo usar ESP32 en el entorno Arduino. Primero pasos.
+* Programación de IOT.
+* Plataformas en la nube.
+* IOT y domótica.
+* Enfoque STEAM: Ciencias, Tecnología, Ingeniería y Matemáticas conectadas con las expresiones artísticas.
+* IoT en el aula: de prácticas sencillas a un engranaje curricular complejo.
 
-## Programación
+## [Hardware](./Hardware.md)
 
-### Servo: D3 - GPIO25
+## [Programación](./Programacion_Arduino.md)
 
-Una aplicación del PWM es el control de los conocidos servos (o servomotores)
+## Plataformas IOT
 
-```python
-
-import machine
-
-servo = machine.PWM(machine.Pin(25),freq = 50)
-servo.duty(47) # Posicion minima
-servo.duty(82) # Posicion central
-servo.duty(119) # Posicion maxima
-
-```
-
-### Motor L298n
-
-[Ejemplo](https://github.com/GuyCarver/MicroPython/blob/master/lib/L298N.py)
-
-```python
-class motor(In1,In2,EN):
-	def move(self,speed):
-		if speed>0:
-			In1.value(1)
-			In2.value(0)
-		elif speec < 0:
-			In1.value(0)
-			In2.value(1)
-		else
-			In1.value(0)
-			In2.value(0)
-		EN.duty(abs(speed))
-```
-
-## Configurar IDE de Arduino
-
-1. Añadimos el repositorio de placas ESP32 en preferencias: "Archivo" -> "Preferencias" y añadimos esta URL (si ya hay ponemos una "," para separar) :
-
-https://dl.espressif.com/dl/package_esp32_index.json
-
-![](./images/3.png)
-
-2. Añadimos las placas desde el menú "Herramientas" -> "Placas" -> "Gestor de tarjetas..." y buscamos "ESP32"
-
-![](./images/4.png)
-
-3. Pulsamos "Instalar"
-
-4. Ahora tendremos nuevas placas disponibles. Seleccionaremos "ESP32 Dev Module" o "Do32..." según el fabricante
-
-5. Si usamos SO Windows, tendremos que instalar los drivers para el chip CH340
-
-6. También nos aparecerán nuevos ejemplos
-
-## Recursos
-
-[SDK de Espressif](https://github.com/espressif/arduino-esp32)
-
-
-[Tutorial básico](https://solectroshop.com/es/content/125-tutorial-para-la-placa-wemos-d1-esp32-r32-wroom-32-wifi-y-bluetooth)
+## [Recursos](./Recursos.md)
