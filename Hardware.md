@@ -31,7 +31,14 @@
 
 ![](./images/Pinout-Arduino-WemosD1R32.png)
 
-Cortesía de [Leopoldo Armesto Ángel](https://www.slideshare.net/LeopoldoArmestongel)
+(Cortesía de [Leopoldo Armesto Ángel](https://www.slideshare.net/LeopoldoArmestongel))
+
+
+
+### Comparativa arduino/ESP8266/ESP32
+
+![](./images/Comparativa+ESP32+vs+Arduino.jpeg)
+
 
 ### Alternativas ESP32
 

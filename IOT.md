@@ -1,6 +1,6 @@
 ## [¿Qué es IOT?](https://es.wikipedia.org/wiki/Internet_de_las_cosas)
 
-![IOT](https://upload.wikimedia.org/wikipedia/commons/f/f2/Internet_de_las_Cosas.jpg)
+![IOT](./images/ConectandoIOT.jpg)
 
 (De Drawed by Wilgengebroed on Flickr - Translated by Prades97, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=32745149)
 

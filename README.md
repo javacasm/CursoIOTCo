@@ -62,4 +62,6 @@ Es muy recomendable que tengáis  vuestro propio ordenador portátil con la últ
 
 ## [Plataformas IOT](./PlataformasIOT.md)
 
+## [Apéndice: electŕonica](./Electronica.md)
+
 ## [Recursos](./Recursos.md)
