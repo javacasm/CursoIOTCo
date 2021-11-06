@@ -33,3 +33,9 @@
 
 Cortesía de [Leopoldo Armesto Ángel](https://www.slideshare.net/LeopoldoArmestongel)
 
+### Alternativas ESP32
+
+#### M5Stack
+
+#### Wemos
+

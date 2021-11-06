@@ -45,12 +45,14 @@ Es muy recomendable que tengáis  vuestro propio ordenador portátil con la últ
 
 ## Contenidos
 
-* ¿Qué es IOT?: Usos y problemas que plantea. Ejemplos.
+* [¿Qué es IOT?](./IOT.md): Usos y problemas que plantea. Ejemplos.
+    * [Domótica](./Domotica.md)
+    * [Domótica "casera"](./DomoticaCasera.md)
 * Características de los equipos IOT
+    * Protocolos [MQTT](./MQTT.md)
 * Cómo usar ESP32 en el entorno Arduino. Primero pasos.
 * Programación de IOT.
 * Plataformas en la nube.
-* IOT y domótica.
 * Enfoque STEAM: Ciencias, Tecnología, Ingeniería y Matemáticas conectadas con las expresiones artísticas.
 * IoT en el aula: de prácticas sencillas a un engranaje curricular complejo.
 
@@ -58,6 +60,6 @@ Es muy recomendable que tengáis  vuestro propio ordenador portátil con la últ
 
 ## [Programación](./Programacion_Arduino.md)
 
-## Plataformas IOT
+## [Plataformas IOT](./PlataformasIOT.md)
 
 ## [Recursos](./Recursos.md)
