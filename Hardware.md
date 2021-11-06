@@ -35,9 +35,6 @@
 
 
 
-### Comparativa arduino/ESP8266/ESP32
-
-![](./images/Comparativa+ESP32+vs+Arduino.jpeg)
 
 
 ### Alternativas ESP32
@@ -45,4 +42,21 @@
 #### M5Stack
 
 #### Wemos
+
+#### ESP8266-01
+
+![](./images/esp8266-01.jpeg)
+
+#### NodeMCU
+
+![](./images/MiNodeMCU_pcb.jpg)
+
+
+#### [Wemos](https://github.com/javacasm/WeMos_ESP8266)
+
+![](./images/Wemos.jpg)
+
+### Comparativa arduino/ESP8266/ESP32
+
+![](./images/Comparativa+ESP32+vs+Arduino.jpeg)
 
