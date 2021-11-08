@@ -45,27 +45,27 @@ Es muy recomendable que tengáis  vuestro propio ordenador portátil con la últ
 
 ## Contenidos
 
-* [¿Qué es IOT?](./IOT.md): Usos y problemas que plantea. Ejemplos.
-    * [Domótica](./Domotica.md)
-    * [Domótica "casera"](./DomoticaCasera.md)
+* [¿Qué es IOT?](./1.0.IOT.md): Usos y problemas que plantea. Ejemplos.
+    * [Domótica](./1.1.Domotica.md)
+    * [Domótica "casera"](./5.2.DomoticaCasera.md)
 * Características de los equipos IOT
-    * Protocolos [MQTT](./MQTT.md)
+    * Protocolos [MQTT](./4.3.MQTT.md)
 * Cómo usar ESP32 en el entorno Arduino. Primero pasos.
 * Programación de IOT.
 * Plataformas en la nube.
 * Enfoque STEAM: Ciencias, Tecnología, Ingeniería y Matemáticas conectadas con las expresiones artísticas.
 * IoT en el aula: de prácticas sencillas a un engranaje curricular complejo.
 
-## [Hardware](./Hardware.md)
+## [Hardware](./2.0.Hardware.md)
 
-## [Programación](./Programacion_Arduino.md)
+## [Programación](./3.0.Programacion_Arduino.md)
 
-## [Plataformas IOT](./PlataformasIOT.md)
+## [Plataformas IOT](./4.1.PlataformasIOT.md)
 
-## [Apéndice: electrónica](./Electronica.md)
+## [Apéndice: electrónica](./6.1.Electronica.md)
 
-## [Apéndice: HTML](./HTML.md)
+## [Apéndice: HTML](./6.2.HTML.md)
 
-## [Apéndice: Internet](./Internet.md)
+## [Apéndice: Internet](./6.3.0.FuncionamientoInternet.md)
 
 ## [Recursos](./Recursos.md)
