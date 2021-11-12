@@ -9,6 +9,8 @@ void setup() {
   pinMode(led, OUTPUT);
   digitalWrite(led, 0);
   Serial.begin(115200);
+  Serial.print("Conectando a ");
+  Serial.print(ssid);  
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
   Serial.println("");

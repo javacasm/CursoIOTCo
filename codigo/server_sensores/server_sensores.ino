@@ -13,13 +13,25 @@ WebServer server(80);
 const int led = LED_BUILTIN;
 
 void handleRoot() {
-  digitalWrite(led, HIGH);
-  server.send(200, "text/plain", "hola desde esp32!");
-  digitalWrite(led, LOW);
+  digitalWrite(led, 1);
+  String webPage =  "<HTML>"
+                    "<head><Title>Este es el titulo</Title></head>"
+                    "<body>"
+                    "<center>Texto centrado</center>"
+                    "<p>Esto es un parrafo</p>"
+                    "<br/>Un poco de separacion"
+                    "<br/>";
+  webPage += "Temperatura sensor 1: " + String(27.3) + "<br/>";                    
+  webPage += "Temperatura sensor 2: " + String(12.73) + "<br/>";                    
+  webPage +=        "<br/><img src=\"https://github.com/javacasm/Teleco_IOT/blob/master/images/Licencia_CC_peque.png?raw=true\">"
+                    "</body>"
+                    "</HTML>";
+  server.send(200, "text/HTML", webPage);
+  digitalWrite(led, 0);
 }
 
 void handleNotFound() {
-  digitalWrite(led, HIGH);
+  digitalWrite(led, 1);
   String message = "File Not Found\n\n";
   message += "URI: ";
   message += server.uri();
@@ -32,14 +44,16 @@ void handleNotFound() {
     message += " " + server.argName(i) + ": " + server.arg(i) + "\n";
   }
   server.send(404, "text/plain", message);
-  digitalWrite(led, LOW);
+  digitalWrite(led, 0);
 }
 
 
 void setup() {
   pinMode(led, OUTPUT);
-  digitalWrite(led, LOW);
+  digitalWrite(led, 0);
   Serial.begin(115200);
+  Serial.print("Conectando a ");
+  Serial.print(ssid);
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
   Serial.println("");

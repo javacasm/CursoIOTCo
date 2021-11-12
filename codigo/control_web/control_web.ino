@@ -22,7 +22,7 @@ const char *webPage =
 "<button name='comando' type='submit' value='2'>ON Led</button><br>"
 "<button name='comando' type='submit' value='3'>OFF Rele</button>"
 "<button name='comando' type='submit' value='4'>OFF Led</button>"
-"<br><a href=\"https://github.com/javacasm/Teleco_IOTHT/\">Codigo</a>"
+"<br><a href=\"https://github.com/javacasm/CursoIOTCo/tree/main/codigo/control_web\">Codigo</a>"
 "<br><img src=\"https://github.com/javacasm/Teleco_IOT/blob/master/images/Licencia_CC_peque.png?raw=true\">"
 "</form></center>"
 "</body>"
@@ -50,8 +50,8 @@ void handleForm()
                 digitalWrite(led,LOW);
                 break;
         }
-        // move for 300ms, gives chip time to update wifi also
-        delay(300);
+        
+        delay(50);
     }
 
     // in all cases send the response
@@ -87,7 +87,9 @@ void setup() {
   digitalWrite(rele, LOW);
   
   Serial.begin(115200);
-  
+
+  Serial.print("Conectando a ");
+  Serial.print(ssid);
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
   Serial.println("");
