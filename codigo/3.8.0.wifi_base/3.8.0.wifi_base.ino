@@ -1,7 +1,7 @@
 #include <WiFi.h>
 #include <WiFiClient.h>
 
-#include "config.h"
+#include "config.h"  // Cambiamos  el SSI y la clave en el fichero config.h
 
 const int led = LED_BUILTIN;
 
@@ -18,7 +18,7 @@ void setup() {
   // Wait for connection
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
-    Serial.print(".");
+    Serial.print("."); // imprime "." mientras intenta conectarse
   }
   Serial.println("");
   Serial.print("Conectado a ");
@@ -28,7 +28,4 @@ void setup() {
 
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-
-}
+void loop() {}
