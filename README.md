@@ -1,10 +1,10 @@
-# Curso Internet de las cosas con Arduino ([221408GE042](https://www.juntadeandalucia.es/educacion/secretariavirtual/consultaCEP/actividad/221408GE042/))
+# Curso Internet de las cosas con Arduino ([221408GE096](https://www.juntadeandalucia.es/educacion/secretariavirtual/consultaCEP/actividad/221408GE096/))
 
 ![](./images/iot.png)
 
 ## CEP de Córdoba
 
-## Noviembre 2021
+## Abril 2022
 
 ![Licencia](./images/LicenciaCC_peque.png)
 
